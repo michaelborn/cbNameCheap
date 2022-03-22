@@ -1,19 +1,19 @@
 {
-    "name":"@MODULE_NAME@-adobe@2018",
+    "name":"cbNameCheap-adobe@2018",
     "app":{
         "serverHomeDirectory":".engine/adobe2018",
         "cfengine":"adobe@2018"
     },
     "web":{
         "http":{
-            "port":"60299"
+            "port":"60188"
         },
         "rewrites":{
             "enable":"true"
         },
 		"webroot": "test-harness",
 		"aliases":{
-            "/moduleroot/@MODULE_NAME@":"./"
+            "/moduleroot/cbNameCheap":"./"
         }
     },
     "openBrowser":"false",

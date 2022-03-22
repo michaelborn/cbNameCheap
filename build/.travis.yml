@@ -7,7 +7,7 @@ notifications:
 env:
   # Fill out these global variables for build process
   global:
-    - MODULE_ID=@MODULE_NAME@
+    - MODULE_ID=cbNameCheap
   matrix:
     - ENGINE=lucee@5
     - ENGINE=adobe@2016
@@ -71,9 +71,9 @@ script:
   # run our matrix server
   - box server start serverConfigFile="server-${ENGINE}.json"
   # Startup the app
-  #- curl http://localhost:60299
+  #- curl http://localhost:60188
   # Debugging of tests
-  #- curl http://localhost:60299/tests/runner.cfm?reporter=json -o testresults.json && cat testresults.json
+  #- curl http://localhost:60188/tests/runner.cfm?reporter=json -o testresults.json && cat testresults.json
   # move back to build dir to build it
   - cd $TRAVIS_BUILD_DIR
   # Build Project

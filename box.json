@@ -1,14 +1,14 @@
 {
-	"name" 		: "@MODULE_NAME@",
+	"name" 		: "cbNameCheap",
 	"version"   : "1.0.0",
-    "location"  : "https://downloads.ortussolutions.com/ortussolutions/coldbox-modules/@MODULE_SLUG@/@build.version@/@MODULE_SLUG@-@build.version@.zip",
+    "location"  : "https://downloads.ortussolutions.com/ortussolutions/coldbox-modules/cbNameCheap/@build.version@/cbNameCheap-@build.version@.zip",
 	"author" 	: "Ortus Solutions <info@ortussolutions.com",
-	"homepage"	: "https://github.com/coldbox-modules/@MODULE_SLUG@",
-	"documentation"		: "https://github.com/coldbox-modules/@MODULE_SLUG@",
-	"repository"		: { "type" : "git", "url" : "https://github.com/coldbox-modules/@MODULE_SLUG@" },
-	"bugs" : "https://github.com/coldbox-modules/@MODULE_SLUG@",
+	"homepage"	: "https://github.com/coldbox-modules/cbNameCheap",
+	"documentation"		: "https://github.com/coldbox-modules/cbNameCheap",
+	"repository"		: { "type" : "git", "url" : "https://github.com/coldbox-modules/cbNameCheap" },
+	"bugs" : "https://github.com/coldbox-modules/cbNameCheap",
 	"shortDescription"	: "Description goes here",
-	"slug"		: "@MODULE_SLUG@",
+	"slug"		: "cbNameCheap",
 	"type"		: "modules",
 	"keywords":"",
 	"license"			: [
@@ -42,6 +42,6 @@
         "install:2021":"run-script cfpm:install zip,debugger"
     },
 	"testbox":{
-        "runner":"http://localhost:60299/tests/runner.cfm"
+        "runner":"http://localhost:60188/tests/runner.cfm"
     }
 }

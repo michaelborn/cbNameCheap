@@ -6,16 +6,16 @@
 component {
 
 	// Module Properties
-	this.title 				= "@MODULE_NAME@";
+	this.title 				= "cbNameCheap";
 	this.author 			= "Ortus Solutions";
 	this.webURL 			= "https://www.ortussolutions.com";
-	this.description 		= "@MODULE_DESCRIPTION@";
+	this.description 		= "CFML API wrapper for namecheap.com";
 
 	// Model Namespace
-	this.modelNamespace		= "@MODULE_SLUG@";
+	this.modelNamespace		= "cbNameCheap";
 
 	// CF Mapping
-	this.cfmapping			= "@MODULE_SLUG@";
+	this.cfmapping			= "cbNameCheap";
 
 	// Dependencies
 	this.dependencies 		= [];

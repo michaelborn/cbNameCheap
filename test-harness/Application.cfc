@@ -7,7 +7,7 @@ www.ortussolutions.com
 component{
 
 	// UPDATE THE NAME OF THE MODULE IN TESTING BELOW
-	request.MODULE_NAME = "@MODULE_NAME@";
+	request.MODULE_NAME = "cbNameCheap";
 
 	// Application properties
 	this.name              = hash( getCurrentTemplatePath() );
@@ -46,6 +46,7 @@ component{
 	// Module Root + Path Mappings
 	this.mappings[ "/moduleroot" ] = moduleRootPath;
 	this.mappings[ "/#request.MODULE_NAME#" ] = modulePath;
+	writeDump( this.mappings[ "/moduleroot" ] );
 
 	// ORM definitions: ENABLE IF NEEDED
 	//this.datasource = "coolblog";
