@@ -46,24 +46,6 @@ component{
 	// Module Root + Path Mappings
 	this.mappings[ "/moduleroot" ] = moduleRootPath;
 	this.mappings[ "/#request.MODULE_NAME#" ] = modulePath;
-	writeDump( this.mappings[ "/moduleroot" ] );
-
-	// ORM definitions: ENABLE IF NEEDED
-	//this.datasource = "coolblog";
-	//this.ormEnabled = "true";
-	/**
-	this.ormSettings = {
-		cfclocation = [ "models" ],
-		logSQL = true,
-		dbcreate = "update",
-		secondarycacheenabled = false,
-		cacheProvider = "ehcache",
-		flushAtRequestEnd = false,
-		eventhandling = true,
-		eventHandler = "cborm.models.EventHandler",
-		skipcfcWithError = true
-	};
-	**/
 
 	// application start
 	public boolean function onApplicationStart(){
@@ -79,7 +61,6 @@ component{
 			if( server.keyExists( "lucee" ) ){
 				pagePoolClear();
 			}
-			ormReload();
 		}
 
 		// Process ColdBox Request
