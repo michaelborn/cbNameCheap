@@ -4,13 +4,12 @@
 component accessors="true"{
 
 	// Properties
-	
+	property name="NameCheapClient" inject="NameCheapClient@cbNameCheap";
 
 	/**
 	 * Constructor
 	 */
-	Domains function init(){
-
+	public Domains function init(){
 		return this;
 	}
 
@@ -18,7 +17,11 @@ component accessors="true"{
 	 * getList
 	 */
 	function getList(){
-
+		return NameCheapClient.get(
+			queryParams = {
+				"Command" : "namecheap.domains.getList"
+			}
+		);
 	}
 
 	/**

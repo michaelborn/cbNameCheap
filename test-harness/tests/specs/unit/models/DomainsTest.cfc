@@ -1,34 +1,14 @@
-/**
-* The base model test case will use the 'model' annotation as the instantiation path
-* and then create it, prepare it for mocking and then place it in the variables scope as 'model'. It is your
-* responsibility to update the model annotation instantiation path and init your model.
-*/
-component extends="coldbox.system.testing.BaseModelTest" model="models.Domains"{
 
-	/*********************************** LIFE CYCLE Methods ***********************************/
+component extends="tests.specs.unit.BaseModelTest" model="models.Domains"{
 
-	function beforeAll(){
-		super.beforeAll();
-
-		// setup the model
-		super.setup();
-
-		// init the model object
-		model.init();
-	}
-
-	function afterAll(){
-		super.afterAll();
-	}
-
-	/*********************************** BDD SUITES ***********************************/
 
 	function run(){
 
 		describe( "Domains Suite", function(){
 
 			it( "should getList", function(){
-				expect( false ).toBeTrue();
+				var result = variables.model.getList();
+				expect(  result).toBeInstanceOf( "Hyper.models.HyperResponse" );
 			});
 
 			it( "should getContacts", function(){

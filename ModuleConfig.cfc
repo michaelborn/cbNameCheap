@@ -24,9 +24,27 @@ component {
 	 * Configure Module
 	 */
 	function configure(){
+		// module settings - stored in modules.name.settings
 		settings = {
-
+			apiUser : getSystemSetting( "NAMECHEAP_API_USER", "myusername" ),
+			clientIP : getSystemSetting( "NAMECHEAP_CLIENT_IP", "1.2.3.4" ),
+			apiKey : getSystemSetting( "NAMECHEAP_API_KEY", "blablasecret" ),
+			apiURL : getSystemSetting( "NAMECHEAP_API_URL", "https://api.sandbox.namecheap.com/xml.response" ),
 		};
+
+		// Binder Mappings
+		binder.map( "NameCheapClient@cbNameCheap" )
+				.to( "hyper.models.HyperBuilder" )
+				.asSingleton()
+				.initWith({
+					baseURL : settings.apiURL,
+					queryParams = {
+						"ApiUser" : settings.ApiUser,
+						"ApiKey"  : settings.apiKey,
+						"ClientIp": settings.ClientIP,
+						"UserName": settings.apiUser
+					}
+				});
 	}
 
 	/**
