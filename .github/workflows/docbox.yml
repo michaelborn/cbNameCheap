@@ -5,10 +5,10 @@ on:
       - master
       - main
     paths:
-      - '**.cfc' # Only run if *.cfc files are modified
+      - '**.cfc'
 
 env:
-  PACKAGE_NAME: cfPlaid
+  PACKAGE_NAME: cbNameCheap
 
 jobs:
   docs:

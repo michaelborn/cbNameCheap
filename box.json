@@ -47,5 +47,6 @@
     },
     "testbox": {
         "runner": "http://localhost:60188/tests/runner.cfm"
-    }
+    },
+    "private" : true
 }
